@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="password" id="a1">
+    <button id="a2">show</button>
+</body>
+<script>
+    let a1 = document.getElementById('a1');
+    let a2 = document.getElementById('a2');
+
+    a2.addEventListener('click', () => {
+        if (a2.innerText == 'show'){
+
+            a1.setAttribute('type' , 'text');
+            a2.innerText = 'hide';
+        }
+        else{
+            a1.setAttribute('type' , 'password');
+            a2.innerText = 'show';
+        }
+    })
+    
+</script>
+</html>
